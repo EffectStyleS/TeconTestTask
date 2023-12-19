@@ -4,6 +4,9 @@ using WebAPI.Infrastructure.Extensions;
 
 namespace WebAPI.Infrastructure.Validators;
 
+/// <summary>
+///     Валидатор DTO регистрации
+/// </summary>
 public class RegisterDtoValidator : AbstractValidator<RegisterDto>
 {
     public RegisterDtoValidator()

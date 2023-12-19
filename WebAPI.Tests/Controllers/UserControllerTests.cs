@@ -9,6 +9,9 @@ using WebAPI.Interfaces;
 
 namespace WebAPI.Tests.Controllers;
 
+/// <summary>
+///     Класс Unit-тестов UserController'а
+/// </summary>
 public class UserControllerTests
 {
     /// <summary>

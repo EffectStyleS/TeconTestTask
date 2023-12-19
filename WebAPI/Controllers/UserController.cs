@@ -6,6 +6,9 @@ using WebAPI.Interfaces;
 
 namespace WebAPI.Controllers;
 
+/// <summary>
+///     Контроллер API пользователя
+/// </summary>
 [Route("api/[controller]")]
 [ApiController]
 public class UserController : ControllerBase

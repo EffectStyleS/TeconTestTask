@@ -4,6 +4,9 @@ using WebAPI.Interfaces;
 
 namespace WebAPI.Services;
 
+/// <summary>
+///     Реализация сервиса пользователя
+/// </summary>
 public class UserService : IUserService
 {
     private readonly Context _context;
@@ -12,6 +15,8 @@ public class UserService : IUserService
     {
         _context = context;
     }
+
+    #region IUserService implementation
 
     public List<User> GetUsers() => _context.Users;
 
@@ -34,4 +39,6 @@ public class UserService : IUserService
     public User FindById(Guid id) => _context.Users.Find(x => x.Id == id);
 
     public User FindByEmailAndPassword(string email, string password) => _context.Users.Find(x => x.Email == email && x.Password == password);
+
+    #endregion  
 }

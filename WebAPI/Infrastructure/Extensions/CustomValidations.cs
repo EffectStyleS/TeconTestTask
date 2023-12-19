@@ -2,14 +2,19 @@
 
 namespace WebAPI.Infrastructure.Extensions;
 
+/// <summary>
+///      Кастомные валидации, расширяют IRuleBuilder
+/// </summary>
 public static class CustomValidations
 {
     /// <summary>
-    ///     
+    ///     Валидация пароля
     /// </summary>
-    /// <typeparam name="T"></typeparam>
-    /// <param name="ruleBuilder"></param>
-    /// <param name="minPasswordLength"></param>
+    /// <typeparam name="T">Тип проверяемого объекта</typeparam>
+    /// <param name="ruleBuilder">Валидатор</param>
+    /// <param name="minPasswordLength">
+    ///     Минимальная длина пароля, по умолчанию 8 символов
+    /// </param>
     /// <returns></returns>
     public static IRuleBuilderOptions<T, string> PasswordCustom<T>(this IRuleBuilder<T, string> ruleBuilder, int minPasswordLength = 8)
     {

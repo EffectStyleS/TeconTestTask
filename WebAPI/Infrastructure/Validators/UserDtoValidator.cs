@@ -3,6 +3,9 @@ using WebAPI.DTOs;
 
 namespace WebAPI.Infrastructure.Validators;
 
+/// <summary>
+///     Валидатор DTO пользователя
+/// </summary>
 public class UserDtoValidator : AbstractValidator<UserDto>
 {
     public UserDtoValidator() 

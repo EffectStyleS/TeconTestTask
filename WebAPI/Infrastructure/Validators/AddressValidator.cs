@@ -3,6 +3,9 @@ using WebAPI.Entities;
 
 namespace WebAPI.Infrastructure.Validators;
 
+/// <summary>
+///     Валидатор адреса
+/// </summary>
 public class AddressValidator : AbstractValidator<Address>
 {
     public AddressValidator()

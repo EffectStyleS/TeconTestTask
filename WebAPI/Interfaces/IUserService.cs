@@ -3,6 +3,9 @@ using WebAPI.Entities;
 
 namespace WebAPI.Interfaces
 {
+    /// <summary>
+    ///     Интерфейс сервиса пользователя
+    /// </summary>
     public interface IUserService
     {
         /// <summary>

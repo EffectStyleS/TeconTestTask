@@ -4,6 +4,9 @@ using WebAPI.Infrastructure.Extensions;
 
 namespace WebAPI.Infrastructure.Validators;
 
+/// <summary>
+///     Валидатор DTO смены пароля
+/// </summary>
 public class ChangePasswordDtoValidator : AbstractValidator<ChangePasswordDto>
 {
     public ChangePasswordDtoValidator()
